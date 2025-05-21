@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍕 Chat Pizza
 
-## Getting Started
+Projeto desenvolvido com Next.js, utilizando TypeScript, Tailwind CSS, Prisma e outras tecnologias modernas. O objetivo é criar uma aplicação web interativa para pedidos de pizza via chat.
 
-First, run the development server:
+## ✨ Tecnologias Utilizadas
+
+* [Next.js](https://nextjs.org/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [Prisma ORM](https://www.prisma.io/)
+* [pnpm](https://pnpm.io/)
+* [PostgreSQL](https://www.postgresql.org/)
+
+## 📁 Estrutura do Projeto
+
+* `src/`: Código-fonte da aplicação.
+* `prisma/`: Schemas e migrações do Prisma.
+* `public/`: Arquivos estáticos.
+* `package.json`: Dependências e scripts.
+* `tsconfig.json`: Configurações do TypeScript.
+* `next.config.ts`: Configurações do Next.js.
+* `.env`: Variáveis de ambiente (não incluído).
+
+## ⚙️ Pré-requisitos
+
+* [Node.js](https://nodejs.org/) v14+
+* [pnpm](https://pnpm.io/)
+* [PostgreSQL](https://www.postgresql.org/)
+
+## 🔧 Instalação
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Math-Lira/chat-pizza.git
+cd chat-pizza
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Crie um arquivo `.env` com:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```env
+DATABASE_URL="sua_url_do_banco_de_dados"
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Execute as migrações:
 
-## Learn More
+```bash
+pnpm prisma migrate dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🏃 Executando o Projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Acesse: [http://localhost:3000](http://localhost:3000)
 
-## Deploy on Vercel
+## 📦 Scripts Disponíveis
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* `pnpm dev`: Modo desenvolvimento
+* `pnpm build`: Build de produção
+* `pnpm start`: Inicia produção
+* `pnpm lint`: Lint do código
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
