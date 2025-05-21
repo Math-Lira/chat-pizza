@@ -9,7 +9,7 @@ Projeto desenvolvido com Next.js, utilizando TypeScript, Tailwind CSS, Prisma e 
 * [Tailwind CSS](https://tailwindcss.com/)
 * [Prisma ORM](https://www.prisma.io/)
 * [pnpm](https://pnpm.io/)
-* [PostgreSQL](https://www.postgresql.org/)
+* [SQLite](https://www.sqlite.org/)
 
 ## 📁 Estrutura do Projeto
 
@@ -25,7 +25,6 @@ Projeto desenvolvido com Next.js, utilizando TypeScript, Tailwind CSS, Prisma e 
 
 * [Node.js](https://nodejs.org/) v14+
 * [pnpm](https://pnpm.io/)
-* [PostgreSQL](https://www.postgresql.org/)
 
 ## 🔧 Instalação
 
